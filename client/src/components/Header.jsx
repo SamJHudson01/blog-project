@@ -21,10 +21,10 @@ export const Header = () => {
           type="text"
           placeholder="Search..."
           rightIcon={AiOutlineSearch}
-          className="hidden sm:block w-full sm:w-50"
+          className="hidden md:block sm:hidden w-full sm:w-50"
         />
       </form>
-      <Button className="w-12 h-10 lg:hidden" color="gray" pill>
+      <Button className="w-12 h-10 lg:hidden md:hidden" color="gray" pill>
         <AiOutlineSearch />
       </Button>
       <div className="flex gap-2 md:order-2">
@@ -32,7 +32,7 @@ export const Header = () => {
           <FaMoon />
         </Button>
         <Link to="/signin" className="ml-2">
-          <Button gradientDuoTone="purpleToBlue">Sign In</Button>
+          <Button gradientDuoTone="purpleToBlue" outline>Sign In</Button>
         </Link>
         <Navbar.Toggle />
       </div>
